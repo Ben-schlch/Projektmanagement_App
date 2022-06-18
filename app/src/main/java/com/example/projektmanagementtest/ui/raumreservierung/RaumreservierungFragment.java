@@ -1,4 +1,4 @@
-package com.example.projektmanagementtest.ui.gallery;
+package com.example.projektmanagementtest.ui.raumreservierung;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.projektmanagementtest.R;
 
-public class GalleryFragment extends Fragment {
+public class RaumreservierungFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private RaumreservierungViewModel raumreservierungViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        raumreservierungViewModel =
+                new ViewModelProvider(this).get(RaumreservierungViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_raumreservierung, container, false);
+        final TextView textView = root.findViewById(R.id.text_raumreservierung);
+        raumreservierungViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

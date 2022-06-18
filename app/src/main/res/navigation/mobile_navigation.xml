@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.projektmanagementtest.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_raumreservierung"
+        android:name="com.example.projektmanagementtest.ui.raumreservierung.RaumreservierungFragment"
+        android:label="@string/menu_raumreservierung"
+        tools:layout="@layout/fragment_raumreservierung" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.projektmanagementtest.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:name="com.example.projektmanagementtest.ui.nutzerdaten.NutzerdatenFragment"
+        android:label="@string/menu_einstellungen"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

@@ -1,18 +1,16 @@
-package com.example.projektmanagementtest.ui.home;
+package com.example.projektmanagementtest.ui.raumreservierung;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class RaumreservierungViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public RaumreservierungViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Das ist die Startseite." +
-                "Hier können dann Infos der Wahl eingeblendet werden." +
-                "..." );
+        mText.setValue("raumreservierung");
     }
 
     public LiveData<String> getText() {

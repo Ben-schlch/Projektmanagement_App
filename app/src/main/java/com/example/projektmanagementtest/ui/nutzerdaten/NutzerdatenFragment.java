@@ -1,4 +1,4 @@
-package com.example.projektmanagementtest.ui.slideshow;
+package com.example.projektmanagementtest.ui.nutzerdaten;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,14 +14,14 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.projektmanagementtest.R;
 
-public class SlideshowFragment extends Fragment {
+public class NutzerdatenFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private NutzerdatenViewModel slideshowViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+                new ViewModelProvider(this).get(NutzerdatenViewModel.class);
         View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
         slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {

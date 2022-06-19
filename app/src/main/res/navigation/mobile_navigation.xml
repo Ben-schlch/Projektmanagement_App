@@ -18,8 +18,14 @@
         tools:layout="@layout/fragment_raumreservierung" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_links"
+        android:name="com.example.projektmanagementtest.ui.links.LinksFragment"
+        android:label="@string/menu_links"
+        tools:layout="@layout/fragment_links" />
+
+    <fragment
+        android:id="@+id/nav_einstellungen"
         android:name="com.example.projektmanagementtest.ui.nutzerdaten.NutzerdatenFragment"
         android:label="@string/menu_einstellungen"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_einstellungen" />
 </navigation>

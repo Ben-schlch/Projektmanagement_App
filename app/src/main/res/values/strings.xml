@@ -9,5 +9,12 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_raumreservierung">Raumreseriverung</string>
+    <string name="menu_links">Links</string>
     <string name="menu_einstellungen">Einstellungen</string>
+
+    <string name="Homepage"><a href="https://www.dhbw-stuttgart.de">Homepage</a></string>
+    <string name="Moodle"><a href="https://elearning.dhbw-stuttgart.de/moodle/">Moodle elearning</a></string>
+    <string name="Kontakt"><a href="https://www.dhbw-stuttgart.de/service/kontakt/">Kontakt</a></string>
+    <string name="Dualis"><a href="https://dualis.dhbw.de/">Dualis</a></string>
+    <string name="Mail"><a href="https://lehre-webmail.dhbw-stuttgart.de/roundcubemail">Roundcube Webmail</a></string>
 </resources>

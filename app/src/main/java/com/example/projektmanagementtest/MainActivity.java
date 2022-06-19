@@ -1,7 +1,9 @@
 package com.example.projektmanagementtest;
 
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -13,8 +15,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class MainActivity extends AppCompatActivity {
+import org.w3c.dom.Text;
 
+public class MainActivity extends AppCompatActivity {
+//    TextView linkTextView;
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -24,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+//        linkTextView = findViewById(R.id.txtdualis);
+//        linkTextView.setMovementMethod(LinkMovementMethod.getInstance());
+
         //fab = floatingactionbutton right corner
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -32,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 //Here we can add more views, also include them in res/layout/menu/activity_main_drwawer.xml
-                R.id.nav_home, R.id.nav_raumreservierung, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_raumreservierung, R.id.nav_links, R.id.nav_einstellungen)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -53,4 +60,5 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 }

@@ -22,14 +22,10 @@ public class UserInputFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         UserInputViewModel =
                 new ViewModelProvider(this).get(UserInputViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_userinput, container, false);
-//        final TextView textView = root.findViewById(R.id.text_home);
-//        UserInputViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//                textView.setText(s);
-//            }
-//        });
-        return root;
+
+        //TODO: einbinden des Layouts "fragment_userinput" mit entsprechender ID (fragment_userinput)
+        //View root = inflater.inflate(R.layout.fragment_userinput, container, false);
+
+        return null;
     }
 }

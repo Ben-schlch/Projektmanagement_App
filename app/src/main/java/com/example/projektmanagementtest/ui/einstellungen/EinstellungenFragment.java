@@ -23,7 +23,7 @@ public class EinstellungenFragment extends Fragment {
         einstellungenViewModel =
                 new ViewModelProvider(this).get(EinstellungenViewModel.class);
         View root = inflater.inflate(R.layout.fragment_raumreservierung, container, false);
-        final TextView textView = root.findViewById(R.id.text_raumreservierung);
+        final TextView textView = root.findViewById(R.id.text);
         einstellungenViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

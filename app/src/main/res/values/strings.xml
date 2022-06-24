@@ -12,9 +12,32 @@
     <string name="menu_links">Links</string>
     <string name="menu_einstellungen">Einstellungen</string>
 
+    <string name="Datum">Datum</string>
+    <string name="Uhrzeit">Uhrzeit</string>
+    <string name="Reservierungsbeginn">Reservierungsbeginn</string>
+    <string name="Grund">Grund</string>
+    <string name="datum">Datum</string>
+    <string name="art_der_veranstaltung">Art der Veranstaltung</string>
+    <string name="geb_ude">Gebäude</string>
+    <string name="gebäude">Gebäude</string>
+    <string name="gruppengr_e">Gruppengröße</string>
+    <string name="gruppengröße">Gruppengröße</string>
+    <string name="anfrage_abschicken">Anfrage Abschicken</string>
+    <string name="raumreservierung">Raumreservierung</string>
+
+    <string name="speichern">Speichern</string>
+
     <string name="Homepage"><a href="https://www.dhbw-stuttgart.de">Homepage</a></string>
     <string name="Moodle"><a href="https://elearning.dhbw-stuttgart.de/moodle/">Moodle elearning</a></string>
     <string name="Kontakt"><a href="https://www.dhbw-stuttgart.de/service/kontakt/">Kontakt</a></string>
     <string name="Dualis"><a href="https://dualis.dhbw.de/">Dualis</a></string>
     <string name="Mail"><a href="https://lehre-webmail.dhbw-stuttgart.de/roundcubemail">Roundcube Webmail</a></string>
+    <string name="vorname">Vorname</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="lehre_dhbw_stuttgart_de">...@lehre.dhbw-stuttgart.de</string>
+    <string name="passwort">Passwort</string>
+    <string name="kurs">Kurs</string>
+    <string name="kursnumer">Kursnumer</string>
+    <string name="name">Name</string>
+    <string name="todo">TODO</string>
 </resources>

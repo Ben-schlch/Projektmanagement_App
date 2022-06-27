@@ -8,20 +8,6 @@
     android:background="@color/primary"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Einstellungen"
-            android:layout_centerInParent="true"
-            android:textColor="@color/black"
-            android:textSize="34sp"/>
-    </RelativeLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -30,12 +16,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/ic_baseline_settings_24"/>
+                android:layout_marginTop="45dp"
+                android:src="@drawable/ic_baseline_settings_24" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -44,23 +32,23 @@
                 android:text="Username:"
                 android:textColor="@color/secondary"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Mat.Nr.:"
                 android:textColor="@color/secondary"
-                android:textSize="12sp"
-                android:layout_gravity="center"/>
+                android:textSize="12sp" />
 
             <LinearLayout
-                android:background="@drawable/round_back_dark_mode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_dark_mode"
                 android:orientation="vertical"
                 android:padding="15dp">
 
@@ -78,14 +66,14 @@
                         android:src="@drawable/darkmodeicon" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/darkmodeicon"
                         android:text="Dark Mode"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/darkmodeicon"/>
+                        android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:layout_width="wrap_content"
@@ -93,30 +81,32 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:switchMinWidth="50dp"
-                        android:theme="@style/DarkModeSwitch"/>
+                        android:theme="@style/DarkModeSwitch"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </RelativeLayout>
 
                 <!--Benachrichtigungen unter mir-->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
-                        android:layout_width="40dp"
                         android:id="@+id/darkmodeicon"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/notificationitem"
                         android:background="@color/grey_200"
-                        android:padding="12dp"/>
+                        android:padding="12dp"
+                        android:src="@drawable/notificationitem" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/darkmodeicon"
                         android:text="Push-Benachrichtigungen"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/darkmodeicon"/>
+                        android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:layout_width="wrap_content"
@@ -124,83 +114,84 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:switchMinWidth="50dp"
-                        android:theme="@style/DarkModeSwitch"/>
+                        android:theme="@style/DarkModeSwitch"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </RelativeLayout>
 
             </LinearLayout>
 
-        <LinearLayout
-            android:background="@drawable/round_back_dark_mode"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            android:padding="15dp">
-
-            <!--Benachrichtigungszeitraum unter mir-->
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_dark_mode"
+                android:orientation="vertical"
+                android:padding="15dp">
 
-                <ImageView
-                    android:id="@+id/benachrichtigunszeitraum"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@color/grey_200"
-                    android:padding="12dp"
-                    android:src="@drawable/ic_baseline_notifications_paused_24" />
+                <!--Benachrichtigungszeitraum unter mir-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_marginStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="Benachrichtigungszeitraum"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:layout_toEndOf="@+id/benachrichtigunszeitraum"/>
+                    <ImageView
+                        android:id="@+id/benachrichtigunszeitraum"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/grey_200"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_baseline_notifications_paused_24" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/dropdown"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
-            </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/benachrichtigunszeitraum"
+                        android:text="Benachrichtigungszeitraum"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
-            <!--Benachrichtigungsart unter mir-->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dropdown" />
+                </RelativeLayout>
 
-                <ImageView
-                    android:id="@+id/benachrichtigungenmenue"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@color/grey_200"
-                    android:padding="12dp"
-                    android:src="@drawable/circlenotis" />
+                <!--Benachrichtigungsart unter mir-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_marginStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="Benachrichtigungen"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:layout_toEndOf="@+id/benachrichtigungenmenue"/>
+                    <ImageView
+                        android:id="@+id/benachrichtigungenmenue"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/grey_200"
+                        android:padding="12dp"
+                        android:src="@drawable/circlenotis" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/dropdown"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
-            </RelativeLayout>
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/benachrichtigungenmenue"
+                        android:text="Benachrichtigungen"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dropdown" />
+                </RelativeLayout>
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="150dp"
         android:text="@string/Datum"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -151,17 +151,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="60dp"
-        android:text="@string/raumreservierung"
-        android:textSize="34sp"
+    <ImageView
+        android:id="@+id/imageViewProfilBild"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="145dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_baseline_meeting_room_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

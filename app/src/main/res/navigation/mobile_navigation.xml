@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/nav_einstellungen"
-        android:name="com.example.projektmanagementtest.ui.nutzerdaten.NutzerdatenFragment"
+        android:name="com.example.projektmanagementtest.ui.einstellungen.EinstellungenFragment"
         android:label="@string/menu_einstellungen"
         tools:layout="@layout/fragment_settings" />
 </navigation>
